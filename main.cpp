@@ -6,6 +6,7 @@
 
 #include "algorithms/bubble_sort.h"
 #include "algorithms/insertion_sort.h"
+#include "data-structures/linked_list.h"
 
 void printVector(std::vector<int> numbers);
 
@@ -30,6 +31,13 @@ int main() {
     
     std::cout << "Sorted: " << std::endl;
     printVector(numbers);
+    
+    // Linked List
+    LinkedList l;
+    l.insert(1);
+    l.insert(2);
+    l.insert(3);
+    l.display();
 
     return 0;
 }
